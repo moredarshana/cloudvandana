@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Survey</title>
+  <link rel="stylesheet" type="text/css" href="survey_styles.css" />
+  <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+  <h1>Customer Survey Form</h1>
+  <div class="container" id="popup-window">
+  <form action="" method="POST" onsubmit="return validateMobile();">
+      <div id="formfield">
+
+        <label for="fname">First Name:</label><br>
+        <input type="text" name="fname" class="text" size="50" placeholder="Enter First Name" required>
+ 
+        <input type="text" name="lname" class="text" size="50" placeholder="enter Last Name" required>
+
+        <input type="text" name="professional" class="text" size="50" placeholder="Professional">
+        
+     <!..   <input type="text" name="mobile" class="text" size="50" placeholder="Enter Mobile number" required />
+        <input type="text" id="mobile" name="mobile" class="text" size="50" placeholder="Enter Mobile number" required />
+
+        <input type="text" name="email" placeholder="Enter email address" required />
+        
+        <label for="birthdate">Date of Birth:</label>
+        <input type="date" name="birthdate" class="text" size="50" required />
+        
+        <select name="country">
+          <option hidden>Country</option>
+          <option>America</option>
+          <option>Japan</option>
+          <option>India</option>
+          <option>Nepal</option>
+        </select>
+      </div>
+<!...
+BZ Constaltant Name 
+Email 
+Applied for....>
+      <div class="gender-box">
+        <h3>Gender</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" id="check-male" name="gender" checked />
+            <label for="check-male">Male</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-female" name="gender" />
+            <label for="check-female">Female</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-other" name="gender" />
+            <label for="check-other">Prefer not to say</label>
+          </div>
+        </div>
+      </div>
+
+      <input name="submit" type="Submit" value="Submit">
+      <input name="reset" type="Reset" value="Reset">
+    </form>
+
+    <script src="survey_script.js"></script>
+  </div>
+</body>
+</html>
